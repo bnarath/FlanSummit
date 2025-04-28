@@ -15,7 +15,7 @@
 ---
 
 ## 📚 Project Features
-- **Base Model:** FLAN-T5-BASE (starting from SMALL to XXL) is an open source LLM first developed by Google using multi task instruction fine-tuning of T5 using FLAN dataset. Refer [this paper](https://arxiv.org/pdf/2210.11416)
+- **Base Model:** FLAN-T5-BASE (starting from SMALL to XXL) is an open source LLM first developed by Google using multi task instruction fine-tuning of T5 using FLAN dataset. Refer [this paper.](https://arxiv.org/pdf/2210.11416)
 
 - **Dataset:**  
   - [DialogSum](https://github.com/cylnlp/dialogsum): A Real-life Scenario Dialogue Summarization Dataset.
@@ -137,7 +137,7 @@ TBD
 
 ---
 
-## 📊 Architecture Flow (Simplified)
+## 📊 Architecture Flow
 
 ```mermaid
 flowchart TD
@@ -145,7 +145,7 @@ flowchart TD
     A --> C([🔧 Fine-tune with PEFT/LoRA])
     C --> D([🏆 Train Reward Model])
     D --> E([🎯 RLHF Fine-tuning with PPO])
-    E --> F([🧩 Quantization (PTQ/QAT)])
+    E --> F([🧩 Quantization - PTQ or QAT])
     E --> G([🌱 Distillation to Small Model])
     F --> H([🚢 Deployment Ready Model])
     G --> H
